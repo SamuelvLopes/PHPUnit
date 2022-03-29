@@ -1,0 +1,21 @@
+{
+    "name": "samu/testesunitarios",
+    "description": "Aprendendo composer",
+    "type": "project",
+    "license": "GLP",
+    "autoload": {
+        "psr-4": {
+            "Samu\\Testesunitarios\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel Lopes",
+            "email": "samuelvitorprofissional@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "9.5"
+    }
+}
