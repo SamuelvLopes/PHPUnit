@@ -9,3 +9,6 @@ narrow integration tests
 
 composer init
 composer require --dev phpunit/phpunit ^9.5
+
+
+./vendor/bin/phpunit src/OrderBundle/Test/Validators/NotEmptyValidatorTest.php

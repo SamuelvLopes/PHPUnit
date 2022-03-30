@@ -4,9 +4,7 @@
     "type": "project",
     "license": "GLP",
     "autoload": {
-        "psr-4": {
-            "Samu\\Testesunitarios\\": "src/"
-        }
+        "psr-0": {"": "src/", "MyFramework\\": "app/"}
     },
     "authors": [
         {
