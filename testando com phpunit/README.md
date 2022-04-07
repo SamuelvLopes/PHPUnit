@@ -10,5 +10,14 @@ narrow integration tests
 composer init
 composer require --dev phpunit/phpunit ^9.5
 
+# comando para testar diretamente o arquivo
+## ./vendor/bin/phpunit src/OrderBundle/Test/Validators/NotEmptyValidatorTest.php
+## ./vendor/bin/phpunit src/OrderBundle/Test/Validators/NumericValidatorTest.php
+# também é possivel executar os testes no diretorio
+## ./vendor/bin/phpunit src/OrderBundle/Test/Validators/
 
-./vendor/bin/phpunit src/OrderBundle/Test/Validators/NotEmptyValidatorTest.php
+
+// sempre colocar no nome do cenario
+//o que está sendo testado
+//quais as circustancias
+//qual o resultado esperado

@@ -55,8 +55,8 @@ class NotEmptyValidatorTest extends TestCase{
     public function valueProvider(){
 
         return [
-            "SholdBeValidWhenValueIsNotEmpty"=>['value'=>'teste','expectedResult'=>true],
-            "SholdBeNotValidWhenValueIsNotEmpty"=>['value'=>'','expectedResult'=>false],
+            "Shold Be Valid When Value Is Not Empty"=>['value'=>'teste','expectedResult'=>true],
+            "Shold Be Not Valid When Value Is Not Empty"=>['value'=>'','expectedResult'=>false],
         ];
 
     }
