@@ -26,7 +26,7 @@ class NotEmptyValidatorTest extends TestCase{
         $this->assertTrue($isValid);
 
     }
-    public function testDataProvides(){
+    public function testValidadorTest(){
         $dataProvider=[
             ''=>false,
             'dd'=>true
@@ -39,4 +39,26 @@ class NotEmptyValidatorTest extends TestCase{
         $this->assertEquals($expectedResult,$isValid);
         }
     }
+
+    /**
+     * @dataProvider valueProvider
+     */
+    public function testComValueProvider($value,$expectedResult){
+      
+        $Validator = new NotEmptyValidator($value);
+        $isValid = $Validator->isValid();
+        
+        $this->assertEquals($expectedResult,$isValid);
+
+    }
+
+    public function valueProvider(){
+
+        return [
+            "SholdBeValidWhenValueIsNotEmpty"=>['value'=>'teste','expectedResult'=>true],
+            "SholdBeNotValidWhenValueIsNotEmpty"=>['value'=>'','expectedResult'=>false],
+        ];
+
+    }
+
 }
